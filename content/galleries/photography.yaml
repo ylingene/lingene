@@ -2,17 +2,35 @@
 # alt: alt text for each image
 # type: portrait | landscape | environment. Used for filtering
 ## Note: cannot have duplicate images the image id remains the same and is used as the key for React arrays
+- image: ../images/photography/california-2021/sf-14.jpg
+  alt: Telegraph Hill
+  type: environment
+- image: ../images/photography/california-2021/sf_film-27.jpg
+  alt: View from Lafayette Park
+  type: environment
 - image: ../images/photography/japan-2019/kamakura.jpg
   alt: Kamakura
   type: environment
 - image: ../images/photography/japan-2019/japan-23.jpg
   alt: Mt. Fuji
   type: landscape
+- image: ../images/photography/california-2021/sf_film-28.jpg
+  alt: Ghirardelli Square
+  type: environment
+- image: ../images/photography/california-2021/sf_film-29.jpg
+  alt: Hyde St park
+  type: environment
 - image: ../images/photography/japan-2018/arashiyama.jpg
   alt: Arashiyama
   type: environment
 - image: ../images/photography/japan-2018/jpf2-4.jpg
   alt: Philosopher's Path
+  type: environment
+- image: ../images/photography/california-2021/sf-28.jpg
+  alt: Macondray Lane
+  type: environment
+- image: ../images/photography/california-2021/sf_film-24.jpg
+  alt: Golden Gate Bridge
   type: environment
 - image: ../images/photography/japan-2019/jpf2-13.jpg
   alt: Gongendo Tsutsumi, Saitama
