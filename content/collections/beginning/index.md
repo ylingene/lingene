@@ -3,7 +3,7 @@ title: A Day's Beginning
 location: California
 date: "2021-04-07"
 backgroundColor: "#abd1d2"
-hero: ../../images/photography/california-2021/lafayette.jpg
+hero: ../../images/photography/california-2021/sf_film-27.jpg
 heroAlt: View from Lafayette Park
 photos: ../../galleries/california-2021.yaml
 ---
