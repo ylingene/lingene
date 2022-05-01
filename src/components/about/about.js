@@ -59,8 +59,7 @@ const AboutMe = () => (
             through other art mediums.
         </p>
         <p>
-            Connect with me at:{" "}
-            <a href="mailto:ylingene@gmail.com">ylingene@gmail.com</a>
+            Connect with me:
         </p>
         <SocialLinks />
     </div>

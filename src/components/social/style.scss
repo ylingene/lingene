@@ -14,21 +14,26 @@ $socialSmall: 22px;
     }
 }
 
-.socialIcon {
+.icon {
     @extend %_icon;
 
     height: $social;
     width: $social;
 }
 
-.socialIcon-small {
+.icon-small {
     @extend %_icon;
 
     height: $socialSmall;
     width: $socialSmall;
 }
 
-.socialLinks {
+/*
+*  Having `social` in the classname can trigger content blockers e.g. Safari
+*  The entire div will be hidden
+*/
+
+.links {
     align-items: center;
     display: flex;
 
