@@ -1,5 +1,5 @@
 - image: ../images/photography/california-2021/sf_film-27.jpg
-  alt: View from Lafayette Park
+  alt: View of Marina from Lafayette Park
 - image: ../images/photography/california-2021/sf_film-1.jpg
   alt: Jackson and Octavia St
 - image: ../images/photography/california-2021/sf_film-2.jpg
@@ -13,104 +13,131 @@
 - image: ../images/photography/california-2021/sf-12.jpg
   alt: Alta Plaza Park
 - image: ../images/photography/california-2021/sf-10.jpg
-  alt: Lafayette Park
+  alt: Lafayette Park mother and child
 - image: ../images/photography/california-2021/sf-11.jpg
-  alt: Alta Plaza Park
+  alt: Alta Plaza Park close up
 - image: ../images/photography/california-2021/sf-13.jpg
   alt: Alta Plaza Park tree and Sutro tower
+- image: ../images/photography/california-2021/sf-43.jpg
+  alt: Mount Tamalpais tree sunrise
+- image: ../images/photography/california-2021/sf-42.jpg
+  alt: Mount Tamalpais hills
 - image: ../images/photography/california-2021/sf_film-28.jpg
-  alt: Ghirardelli Square
-- image: ../images/photography/california-2021/sf_film-3.jpg
-  alt: Russian Hill
-- image: ../images/photography/california-2021/sf_film-4.jpg
-  alt: Russian Hill
-- image: ../images/photography/california-2021/sf_film-5.jpg
-  alt: Hyde Street trees
+  alt: Ghirardelli Square from Russian Hill
 - image: ../images/photography/california-2021/sf_film-29.jpg
   alt: Hyde St park
+- image: ../images/photography/california-2021/sf_film-4.jpg
+  alt: Russian Hill stairs
+- image: ../images/photography/california-2021/sf_film-3.jpg
+  alt: Russian Hill home
+- image: ../images/photography/california-2021/sf_film-5.jpg
+  alt: Hyde Street trees
 - image: ../images/photography/california-2021/sf_film-6.jpg
   alt: Hyde Street home
 - image: ../images/photography/california-2021/sf_film-7.jpg
-  alt: Russian Hill
+  alt: Russian Hill view of Alcatraz Island
 - image: ../images/photography/california-2021/sf_film-8.jpg
   alt: California Street
+- image: ../images/photography/california-2021/sf-4.jpg
+  alt: Financial District skyline
+- image: ../images/photography/california-2021/sf-36.jpg
+  alt: Huntington Hotel
 - image: ../images/photography/california-2021/sf_film-9.jpg
-  alt: Russian Hill
+  alt: Russian Hill homes on a steep hill
 - image: ../images/photography/california-2021/sf_film-11.jpg
-  alt: Russian Hill
+  alt: Russian Hill home with flowers
 - image: ../images/photography/california-2021/sf_film-12.jpg
-  alt: Russian Hill
+  alt: Russian Hill shop with plants
 - image: ../images/photography/california-2021/sf-1.jpg
-  alt: Russian Hill
+  alt: Russian Hill view of Bay Bridge
 - image: ../images/photography/california-2021/sf_film-22.jpg
-  alt: Russian Hill
+  alt: Russian Hill home at dusk
 - image: ../images/photography/california-2021/sf_film-19.jpg
-  alt: Hyde Street cable car Francisco home
+  alt: Hyde Street cable car and Francisco home
 - image: ../images/photography/california-2021/sf-2.jpg
-  alt: Alamo Square Park
+  alt: Alamo Square Park sunset
+- image: ../images/photography/california-2021/sf-46.jpg
+  alt: Golden Gate Park bridge
 - image: ../images/photography/california-2021/sf-3.jpg
   alt: Conservatory of Flowers
-- image: ../images/photography/california-2021/sf-4.jpg
-  alt: Financial District
+- image: ../images/photography/california-2021/sf-45.jpg
+  alt: Conservatory of Flowers interior
 - image: ../images/photography/california-2021/sf-5.jpg
-  alt: Pacific Heights
+  alt: Pacific Heights Bronco with flowering tree
 - image: ../images/photography/california-2021/sf-6.jpg
-  alt: North Beach shop
-- image: ../images/photography/california-2021/sd-1.jpg
-  alt: Oceanside
+  alt: North Beach storefront
 - image: ../images/photography/california-2021/sf_film-13.jpg
-  alt: Macondray Lane
+  alt: Macondray Lane home
 - image: ../images/photography/california-2021/sf_film-14.jpg
-  alt: Macondray Lane
-- image: ../images/photography/california-2021/sf_film-15.jpg
   alt: Macondray Lane
 - image: ../images/photography/california-2021/sf_film-16.jpg
   alt: Macondray Lane
-- image: ../images/photography/california-2021/sf_film-17.jpg
-  alt: Macondray Lane
 - image: ../images/photography/california-2021/sf_film-18.jpg
+  alt: Macondray Lane cobblestone path
+- image: ../images/photography/california-2021/sf_film-17.jpg
+  alt: Macondray Lane stairs
+- image: ../images/photography/california-2021/sf_film-15.jpg
   alt: Macondray Lane
 - image: ../images/photography/california-2021/sf-28.jpg
-  alt: Macondray Lane
+  alt: Macondray Lane at dusk
 - image: ../images/photography/california-2021/sf-29.jpg
-  alt: Macondray Lane
+  alt: Macondray Lane at dusk
 - image: ../images/photography/california-2021/sf_film-23.jpg
-  alt: Russian Hill
+  alt: Russian Hill home on a hill
 - image: ../images/photography/california-2021/sf_film-24.jpg
-  alt: Golden Gate Bridge
+  alt: Golden Gate Bridge from Russian Hill
 - image: ../images/photography/california-2021/sf_film-20.jpg
-  alt: Presidio
+  alt: Presidio tree line
+- image: ../images/photography/california-2021/sf-30.jpg
+  alt: Presidio sunset
+- image: ../images/photography/california-2021/sf-31.jpg
+  alt: Golden Gate Bridge
+- image: ../images/photography/california-2021/sf-39.jpg
+  alt: Fort Mason pier
 - image: ../images/photography/california-2021/sf_film-21.jpg
-  alt: Fort Mason
-- image: ../images/photography/california-2021/sf_film-25.jpg
-  alt: Fort Mason
-- image: ../images/photography/california-2021/sf_film-26.jpg
-  alt: Fort Mason
+  alt: Fort Mason sunset
+- image: ../images/photography/california-2021/sf-40.jpg
+  alt: Fort Mason and Alcatraz Island
+- image: ../images/photography/california-2021/sf-41.jpg
+  alt: Alcatraz Island
 - image: ../images/photography/california-2021/sf-14.jpg
-  alt: Telegraph Hill
+  alt: Telegraph Hill hidden home
+- image: ../images/photography/california-2021/sf-16.jpg
+  alt: Telegraph Hill home morning
+- image: ../images/photography/california-2021/sf-17.jpg
+  alt: Telegraph Hill home afternoon
 - image: ../images/photography/california-2021/sf-15.jpg
   alt: Coit Tower overlook
-- image: ../images/photography/california-2021/sf-16.jpg
-  alt: Telegraph Hill
-- image: ../images/photography/california-2021/sf-17.jpg
-  alt: Telegraph Hill
+- image: ../images/photography/california-2021/sf-33.jpg
+  alt: Telegraph Hill FIDI
+- image: ../images/photography/california-2021/sf-34.jpg
+  alt: Telegraph Hill watchtower
 - image: ../images/photography/california-2021/sf-18.jpg
-  alt: Telegraph Hill
-- image: ../images/photography/california-2021/sf-19.jpg
-  alt: Embarcadero Ferry Building
-- image: ../images/photography/california-2021/sf-20.jpg
-  alt: Embarcadero Ferry Building
-- image: ../images/photography/california-2021/sf-21.jpg
-  alt: Dolores Park train tracks
+  alt: Telegraph Hill Alta street
+- image: ../images/photography/california-2021/sf-35.jpg
+  alt: Telegraph Hill garden
 - image: ../images/photography/california-2021/sf-22.jpg
   alt: Dolores Park train tracks
 - image: ../images/photography/california-2021/sf-23.jpg
   alt: Dolores Park street car
-- image: ../images/photography/california-2021/sf-24.jpg
-  alt: Ghirardelli Square
-- image: ../images/photography/california-2021/sf-25.jpg
-  alt: waterfront
-- image: ../images/photography/california-2021/sf-26.jpg
-  alt: house
+- image: ../images/photography/california-2021/sf-19.jpg
+  alt: Ferry Building from Embarcadero building
+- image: ../images/photography/california-2021/sf-20.jpg
+  alt: Ferry Building from Embarcadero park
 - image: ../images/photography/california-2021/sf-27.jpg
   alt: Palace of Fine Arts
+- image: ../images/photography/california-2021/sf-26.jpg
+  alt: Marina home
+- image: ../images/photography/california-2021/sf-44.jpg
+  alt: Eureka Valley home
+- image: ../images/photography/california-2021/sf-38.jpg
+  alt: Russian Hill cottage window
+- image: ../images/photography/california-2021/sf-37.jpg
+  alt: Russian Hill street
+- image: ../images/photography/california-2021/sf-32.jpg
+  alt: Powell Street
+- image: ../images/photography/california-2021/sf-24.jpg
+  alt: Ghirardelli Square alley
+- image: ../images/photography/california-2021/sd-1.jpg
+  alt: Oceanside
+ 

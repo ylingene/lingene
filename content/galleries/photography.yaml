@@ -3,11 +3,20 @@
 # type: portrait | landscape | environment. Used for filtering
 ## Note: cannot have duplicate images the image id remains the same and is used as the key for React arrays
 - image: ../images/photography/california-2021/sf-14.jpg
-  alt: Telegraph Hill
+  alt: Telegraph Hill hidden home
   type: environment
 - image: ../images/photography/california-2021/sf_film-27.jpg
-  alt: View from Lafayette Park
+  alt: View of Marina from Lafayette Park
   type: environment
+- image: ../images/photography/california-2021/sf-30.jpg
+  alt: Presidio sunset
+  type: environment
+- image: ../images/photography/california-2021/sf-34.jpg
+  alt: Telegraph Hill watchtower
+  type: environment
+- image: ../images/photography/california-2021/sf-43.jpg
+  alt: Mount Tamalpais tree sunrise
+  type: landscape
 - image: ../images/photography/japan-2019/kamakura.jpg
   alt: Kamakura
   type: environment
@@ -15,7 +24,7 @@
   alt: Mt. Fuji
   type: landscape
 - image: ../images/photography/california-2021/sf_film-28.jpg
-  alt: Ghirardelli Square
+  alt: Ghirardelli Square from Russian Hill
   type: environment
 - image: ../images/photography/california-2021/sf_film-29.jpg
   alt: Hyde St park
@@ -30,7 +39,7 @@
   alt: Macondray Lane
   type: environment
 - image: ../images/photography/california-2021/sf_film-24.jpg
-  alt: Golden Gate Bridge
+  alt: Golden Gate Bridge from Russian Hill
   type: environment
 - image: ../images/photography/japan-2019/jpf2-13.jpg
   alt: Gongendo Tsutsumi, Saitama
