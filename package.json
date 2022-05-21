@@ -3,7 +3,7 @@
   "private": true,
   "description": "Personal website and portfolio for Lingene Yang",
   "version": "0.1.0",
-  "author": "Lingene Yang <ylingene@gmail.com>",
+  "author": "Lingene Yang",
   "dependencies": {
     "@fontsource/inter": "^4.2.2",
     "@fontsource/roboto": "^4.2.3",
