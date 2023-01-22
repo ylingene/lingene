@@ -66,7 +66,7 @@ module.exports = {
             resolve: `gatsby-plugin-sharp`,
             options: {
                 useMozJpeg: false,
-                stripMetadata: true,
+                stripMetadata: false,
                 defaultQuality: 100,
                 defaults: {
                     formats: [`auto`, `webp`],
