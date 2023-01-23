@@ -8,6 +8,7 @@ import useResizeObserver from "use-resize-observer"
 import {
     black,
     galleryContainer,
+    screen_desktop,
     screen_mobile_small,
     white_faded,
 } from "./style.scss"
@@ -66,6 +67,8 @@ const getMobileImageSizes = (galleryWidth, imageDimensions) =>
 /**
  * Gets the image dimensions for each image based on the gallery's width.
  * On larger screens Flikr's justified layout is used.
+ * The dimensions should be used with a wrapping div around the corresponding 
+ * image to allocate a defined height and width for the image to resize into.
  * @param {int} galleryWidth - integer size of the parent gallery container
  * @param {*} images - list of GatsbyImageData images
  * @returns list of objects containing the height and width for each image
@@ -96,6 +99,29 @@ const getImageLayout = (galleryWidth, images) => {
         containerWidth: galleryWidth,
     }
     return getJustifiedLayout(imageDimensions, justifiedLayoutConfig)
+}
+
+/**
+ * Gets the loading behavior of the given image. Earlier images should be loaded
+ * ASAP for a better user experience (reduce Largest Contentful Paint).
+ * @param {int} galleryWidth - integer size of the parent gallery container.
+ * Note that this is an approximate to the actual device width.
+ * @param {int} i - index of the photo in the gallery. Used to determine whether
+ * to eager load the image or not.
+ * @returns string "eager" or "lazy" denoting to eager or lazy loading the image
+ */
+const getImageLoadBehavior = (galleryWidth, i) => {
+    // Eager load the first few photos depending on the screen size. Screen sizes
+    // smaller than desktop will have fewer images eager loaded.
+    let shouldEagerLoad = false
+    if (galleryWidth < screen_desktop) {
+        shouldEagerLoad = i < 3
+    }
+    else {
+        shouldEagerLoad = i < 6 
+    }
+
+    return shouldEagerLoad ? "eager" : "lazy"
 }
 
 /**
@@ -156,6 +182,7 @@ const Gallery = ({ fluidImages }) => {
                                 <GatsbyImage
                                     image={getImage(image)}
                                     alt={alt}
+                                    loading={getImageLoadBehavior(width, i)}
                                 />
                             </div>
                         ))}

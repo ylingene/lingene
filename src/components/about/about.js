@@ -30,6 +30,7 @@ const Picture = ({ author, image }) => (
             image={image}
             alt={author.name}
             className={profilePicture}
+            loading="eager"
         />
     </div>
 )

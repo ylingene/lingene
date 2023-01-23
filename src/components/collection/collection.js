@@ -31,7 +31,20 @@ const getMetaImageFromPost = (posts) => {
     return posts[0].frontmatter.hero.childImageSharp.original
 }
 
-const CollectionPost = ({ frontmatter, fields, excerpt }) => {
+/**
+ * Gets the loading behavior of the given image. Earlier images should be loaded
+ * ASAP for a better user experience (reduce Largest Contentful Paint).
+ * Both mobile and desktop will see at most 2 posts in the initial viewport, so
+ * eager load them.
+ * @param {int} i - index of the photo in the gallery. Used to determine whether
+ * to eager load the image or not.
+ * @returns string "eager" or "lazy" denoting to eager or lazy loading the image
+ */
+ const getImageLoadBehavior = (i) => {
+    return i < 2 ? "eager" : "lazy"
+}
+
+const CollectionPost = ({ frontmatter, fields, excerpt }, i) => {
     return (
         <article
             key={fields.slug}
@@ -43,6 +56,7 @@ const CollectionPost = ({ frontmatter, fields, excerpt }) => {
                         alt={frontmatter.heroAlt}
                         className={hero}
                         image={frontmatter.hero.childImageSharp.gatsbyImageData}
+                        loading={getImageLoadBehavior(i)}
                     />
                 </div>
                 <header className={header}>
@@ -89,7 +103,7 @@ const Collection = ({ headerData, posts }) => {
                 metaImage={getMetaImageFromPost(posts)}
             />
             <Header {...headerData} />
-            {posts.map(CollectionPost)}
+            {posts.map((post, i) => CollectionPost(post, i))}
         </Container>
     )
 }
