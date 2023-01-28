@@ -11,12 +11,12 @@
 - image: ../images/photography/california-2021/sf-30.jpg
   alt: Presidio sunset
   type: environment
-- image: ../images/photography/california-2021/sf-34.jpg
-  alt: Telegraph Hill watchtower
-  type: environment
-- image: ../images/photography/california-2021/sf-43.jpg
-  alt: Mount Tamalpais tree sunrise
+- image: ../images/photography/washington-2022/washington-5.jpg
+  alt: Snow Lake
   type: landscape
+- image: ../images/photography/california-2022/california-36.jpg
+  alt: tennis court, Hearst Castle
+  type: environment
 - image: ../images/photography/japan-2019/kamakura.jpg
   alt: Kamakura
   type: environment
@@ -52,6 +52,21 @@
   type: environment
 - image: ../images/photography/japan-2019/tokyotower.jpg
   alt: Tokyo Tower
+  type: landscape
+- image: ../images/photography/washington-2022/washington-20.jpg
+  alt: tractor on the rolling hills, Steptoe Butte State Park
+  type: landscape
+- image: ../images/photography/washington-2022/washington-19.jpg
+  alt: Lines, The United States Pavilion, Expo '74, Spokane
+  type: portrait
+- image: ../images/photography/california-2022/california-13.jpg
+  alt: Mount Tamalpais, San Francisco
+  type: landscape
+- image: ../images/photography/california-2022/california-44.jpg
+  alt: The Broad, Los Angeles
+  type: environment
+- image: ../images/photography/california-2022/california-30.jpg
+  alt: rock formation with flowers, Highway 1
   type: landscape
 - image: ../images/photography/cat_lev.jpg
   alt: Cat
