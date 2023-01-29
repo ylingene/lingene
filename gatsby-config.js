@@ -67,11 +67,10 @@ module.exports = {
             options: {
                 useMozJpeg: false,
                 stripMetadata: false,
-                defaultQuality: 100,
                 defaults: {
                     formats: [`auto`, `webp`],
                     placeholder: `none`,
-                    quality: 100,
+                    quality: 80,
                 },
             },
         },
@@ -83,7 +82,7 @@ module.exports = {
                 short_name: `Lingene`,
                 start_url: `/`,
                 background_color: `#ffffff`,
-                theme_color: `#053854`,
+                theme_color: `#ffffff`,
                 display: `minimal-ui`,
                 icon: `content/assets/favicon.png`,
             },
