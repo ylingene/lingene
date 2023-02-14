@@ -7,12 +7,7 @@
     justify-content: space-between;
 }
 
-// colors for lightbox
-$white-faded: rgba($white, .95);
-
 :export {
-    black: $black;
-    white_faded: $white-faded;
     screen_mobile_small: $mobile-small;
     screen_desktop: $desktop;
 }

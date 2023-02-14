@@ -1,0 +1,28 @@
+@import "../../styles/colors";
+
+/**
+* Created a separate file because scss modules affects everything besides
+* base html elements e.g. h1 and element and attribute selectors.
+* https://blog.yipl.com.np/css-modules-with-react-the-complete-guide-a98737f79c7c
+*
+* Overrides for Photoswipe styling
+**/
+
+div[class="pswp__bg"] {
+    background: $white;
+}
+
+.pswp__button--arrow .pswp__icn {
+    height: 30px;
+    width: 30px;
+}
+
+.pswp__img {
+    cursor: pointer !important;
+}
+
+.pswp {
+    --pswp-icon-color: $black;
+
+    .pswp__icn-shadow { display: none }
+}

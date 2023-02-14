@@ -1,16 +1,16 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import getJustifiedLayout from "justified-layout"
-import React, { useMemo } from "react"
+import React, { useEffect, useMemo } from "react"
 import PropTypes from "prop-types"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import useResizeObserver from "use-resize-observer"
+import initializeLightbox, { GALLERY_ID, getLightboxData } from "./lightbox"
 
+import "photoswipe/style.css"
+import "./photoswipe.scss"
 import {
-    black,
     galleryContainer,
     screen_desktop,
     screen_mobile_small,
-    white_faded,
 } from "./style.scss"
 
 const GALLERY_CONFIG = {
@@ -18,33 +18,6 @@ const GALLERY_CONFIG = {
     containerPadding: 0,
     targetRowHeight: 400,
     targetRowHeightTolerance: 0.25,
-}
-
-const LIGHTBOX_OPTIONS = {
-    settings: {
-        disablePanzoom: true,
-        hideControlsAfter: 2000,
-        lightboxTransitionSpeed: 0.2,
-        overlayColor: white_faded,
-        slideTransitionSpeed: 0.2,
-        slideTransitionTimingFunction: "easeIn",
-    },
-    buttons: {
-        backgroundColor: "rgba(0,0,0,0)",
-        iconColor: black,
-        showAutoplayButton: false,
-        showDownloadButton: false,
-        showFullscreenButton: false,
-    },
-    caption: {
-        showCaption: false,
-    },
-    progressBar: {
-        showProgressBar: false,
-    },
-    thumbnails: {
-        showThumbnails: false,
-    },
 }
 
 /**
@@ -67,7 +40,7 @@ const getMobileImageSizes = (galleryWidth, imageDimensions) =>
 /**
  * Gets the image dimensions for each image based on the gallery's width.
  * On larger screens Flikr's justified layout is used.
- * The dimensions should be used with a wrapping div around the corresponding 
+ * The dimensions should be used with a wrapping div around the corresponding
  * image to allocate a defined height and width for the image to resize into.
  * @param {int} galleryWidth - integer size of the parent gallery container
  * @param {*} images - list of GatsbyImageData images
@@ -116,9 +89,8 @@ const getImageLoadBehavior = (galleryWidth, i) => {
     let shouldEagerLoad = false
     if (galleryWidth < screen_desktop) {
         shouldEagerLoad = i < 3
-    }
-    else {
-        shouldEagerLoad = i < 6 
+    } else {
+        shouldEagerLoad = i < 6
     }
 
     return shouldEagerLoad ? "eager" : "lazy"
@@ -164,43 +136,43 @@ const Gallery = ({ fluidImages }) => {
         return width ? getImageLayout(width, fluidImages) : null
     }, [fluidImages, width])
 
+    useEffect(initializeLightbox, [])
+
     return (
-        <SimpleReactLightbox>
-            <SRLWrapper options={LIGHTBOX_OPTIONS}>
-                <div ref={containerRef} className={galleryContainer}>
-                    {galleryLayout &&
-                        fluidImages.map(({ alt, image }, i) => (
-                            <div
-                                key={image.id}
-                                style={{
-                                    cursor: "pointer",
-                                    height: galleryLayout.boxes[i].height,
-                                    width: galleryLayout.boxes[i].width,
-                                    marginBottom: GALLERY_CONFIG.boxSpacing,
-                                }}
-                            >
-                                <GatsbyImage
-                                    image={getImage(image)}
-                                    alt={alt}
-                                    loading={getImageLoadBehavior(width, i)}
-                                />
-                            </div>
-                        ))}
-                    {galleryLayout &&
-                        galleryLayout.widowCount > 0 &&
-                        galleryLayout.widowCount < fluidImages.length && (
-                            <Widow
-                                containerWidth={width}
-                                widowBoxes={galleryLayout.boxes.slice(
-                                    galleryLayout.boxes.length -
-                                        galleryLayout.widowCount
-                                )}
-                                boxSpacing={GALLERY_CONFIG.boxSpacing}
-                            />
+        <div ref={containerRef} className={galleryContainer} id={GALLERY_ID}>
+            {galleryLayout &&
+                fluidImages.map(({ alt, image }, i) => (
+                    <a
+                        key={image.id}
+                        target="_blank"
+                        rel="noreferrer"
+                        {...getLightboxData(alt, image)}
+                        style={{
+                            height: galleryLayout.boxes[i].height,
+                            width: galleryLayout.boxes[i].width,
+                            marginBottom: GALLERY_CONFIG.boxSpacing,
+                        }}
+                    >
+                        <GatsbyImage
+                            image={getImage(image)}
+                            alt={alt}
+                            loading={getImageLoadBehavior(width, i)}
+                        />
+                    </a>
+                ))}
+            {galleryLayout &&
+                galleryLayout.widowCount > 0 &&
+                galleryLayout.widowCount < fluidImages.length && (
+                    <Widow
+                        containerWidth={width}
+                        widowBoxes={galleryLayout.boxes.slice(
+                            galleryLayout.boxes.length -
+                                galleryLayout.widowCount
                         )}
-                </div>
-            </SRLWrapper>
-        </SimpleReactLightbox>
+                        boxSpacing={GALLERY_CONFIG.boxSpacing}
+                    />
+                )}
+        </div>
     )
 }
 
@@ -215,7 +187,20 @@ Gallery.propTypes = {
                     childImageSharp: PropTypes.shape({
                         gatsbyImageData: PropTypes.shape({
                             height: PropTypes.number,
-                            images: PropTypes.object,
+                            images: PropTypes.shape({
+                                fallback: PropTypes.shape({
+                                    src: PropTypes.string,
+                                    srcSet: PropTypes.string,
+                                    sizes: PropTypes.string,
+                                }),
+                                sources: PropTypes.arrayOf(
+                                    PropTypes.shape({
+                                        srcSet: PropTypes.string,
+                                        type: PropTypes.string,
+                                        sizes: PropTypes.string,
+                                    })
+                                ),
+                            }),
                             layout: PropTypes.string,
                             width: PropTypes.number,
                         }).isRequired,
