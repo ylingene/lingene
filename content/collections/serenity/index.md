@@ -8,7 +8,7 @@ heroAlt: Snow Lake, Washington
 photos: ../../galleries/washington-2022.yaml
 ---
 
-Washington has some of the most peaceful environments, from the cloud covered mountains of Olympic 
+Washington has some of the most peaceful environments, from the cloud covered mountains of Olympic
 National Park to the foggy Snow Lake to the rolling hills of the Palouse. I often can't help but
 put down my camera and soak in the beautiful views.
 
