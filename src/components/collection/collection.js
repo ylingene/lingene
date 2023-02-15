@@ -40,7 +40,7 @@ const getMetaImageFromPost = (posts) => {
  * to eager load the image or not.
  * @returns string "eager" or "lazy" denoting to eager or lazy loading the image
  */
- const getImageLoadBehavior = (i) => {
+const getImageLoadBehavior = (i) => {
     return i < 2 ? "eager" : "lazy"
 }
 

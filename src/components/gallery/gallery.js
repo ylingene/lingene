@@ -4,6 +4,7 @@ import React, { useEffect, useMemo } from "react"
 import PropTypes from "prop-types"
 import useResizeObserver from "use-resize-observer"
 import initializeLightbox, { GALLERY_ID, getLightboxData } from "./lightbox"
+import { useWindowDimensions } from "../../utils/utils"
 
 import "photoswipe/style.css"
 import "./photoswipe.scss"
@@ -39,14 +40,15 @@ const getMobileImageSizes = (galleryWidth, imageDimensions) =>
 
 /**
  * Gets the image dimensions for each image based on the gallery's width.
- * On larger screens Flikr's justified layout is used.
+ * On larger screens Flickr's justified layout is used.
  * The dimensions should be used with a wrapping div around the corresponding
  * image to allocate a defined height and width for the image to resize into.
  * @param {int} galleryWidth - integer size of the parent gallery container
+ * @param {int} windowWidth - integer width of the viewport
  * @param {*} images - list of GatsbyImageData images
  * @returns list of objects containing the height and width for each image
  */
-const getImageLayout = (galleryWidth, images) => {
+const getImageLayout = (galleryWidth, windowWidth, images) => {
     const imageDimensions = images.map(({ image }) => {
         const img = getImage(image)
         return {
@@ -57,10 +59,11 @@ const getImageLayout = (galleryWidth, images) => {
 
     /**
      * On small screens, display one image per row.
-     * Justified layout doesn't produce the same result even with
-     * fullWidthBreakoutRowCadence due to target height and tolerance.
+     * Justified layout doesn't produce the same result (one image per row
+     * with consistent bottom margins) even with fullWidthBreakoutRowCadence
+     * due to target height and tolerance.
      */
-    if (galleryWidth <= screen_mobile_small) {
+    if (windowWidth <= screen_mobile_small) {
         return {
             boxes: getMobileImageSizes(galleryWidth, imageDimensions),
             widowCount: 0,
@@ -77,17 +80,17 @@ const getImageLayout = (galleryWidth, images) => {
 /**
  * Gets the loading behavior of the given image. Earlier images should be loaded
  * ASAP for a better user experience (reduce Largest Contentful Paint).
- * @param {int} galleryWidth - integer size of the parent gallery container.
+ * @param {int} windowWidth - integer width of the viewport
  * Note that this is an approximate to the actual device width.
  * @param {int} i - index of the photo in the gallery. Used to determine whether
  * to eager load the image or not.
  * @returns string "eager" or "lazy" denoting to eager or lazy loading the image
  */
-const getImageLoadBehavior = (galleryWidth, i) => {
+const getImageLoadBehavior = (windowWidth, i) => {
     // Eager load the first few photos depending on the screen size. Screen sizes
     // smaller than desktop will have fewer images eager loaded.
     let shouldEagerLoad = false
-    if (galleryWidth < screen_desktop) {
+    if (windowWidth < screen_desktop) {
         shouldEagerLoad = i < 3
     } else {
         shouldEagerLoad = i < 6
@@ -131,10 +134,11 @@ Widow.propTypes = {
 
 const Gallery = ({ fluidImages }) => {
     const { ref: containerRef, width } = useResizeObserver()
+    const { width: windowWidth } = useWindowDimensions()
 
     const galleryLayout = useMemo(() => {
-        return width ? getImageLayout(width, fluidImages) : null
-    }, [fluidImages, width])
+        return width ? getImageLayout(width, windowWidth, fluidImages) : null
+    }, [fluidImages, width, windowWidth])
 
     useEffect(initializeLightbox, [])
 
@@ -156,7 +160,7 @@ const Gallery = ({ fluidImages }) => {
                         <GatsbyImage
                             image={getImage(image)}
                             alt={alt}
-                            loading={getImageLoadBehavior(width, i)}
+                            loading={getImageLoadBehavior(windowWidth, i)}
                         />
                     </a>
                 ))}

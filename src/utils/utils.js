@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import {
     COLLECTIONS,
     ERROR,
@@ -20,4 +21,31 @@ export const getPage = (location) => {
     } else {
         return ERROR
     }
+}
+
+// Window Dimension observer https://stackoverflow.com/a/36862446
+const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+        width,
+        height,
+    }
+}
+
+// Hook to get the viewport height and width to set accurate device breakpoints in code
+export const useWindowDimensions = () => {
+    const [windowDimensions, setWindowDimensions] = useState(
+        getWindowDimensions()
+    )
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowDimensions(getWindowDimensions())
+        }
+
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
+    return windowDimensions
 }
