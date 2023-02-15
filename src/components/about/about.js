@@ -59,9 +59,7 @@ const AboutMe = () => (
             primarily through photographs, but I also enjoy exploring them
             through other art mediums.
         </p>
-        <p>
-            Connect with me:
-        </p>
+        <p>Connect with me:</p>
         <SocialLinks />
     </div>
 )
