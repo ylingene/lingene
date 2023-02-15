@@ -137,7 +137,9 @@ const Gallery = ({ fluidImages }) => {
     const { width: windowWidth } = useWindowDimensions()
 
     const galleryLayout = useMemo(() => {
-        return width ? getImageLayout(width, windowWidth, fluidImages) : null
+        return width && windowWidth
+            ? getImageLayout(width, windowWidth, fluidImages)
+            : null
     }, [fluidImages, width, windowWidth])
 
     useEffect(initializeLightbox, [])

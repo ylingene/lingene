@@ -34,11 +34,16 @@ const getWindowDimensions = () => {
 
 // Hook to get the viewport height and width to set accurate device breakpoints in code
 export const useWindowDimensions = () => {
-    const [windowDimensions, setWindowDimensions] = useState(
-        getWindowDimensions()
-    )
+    const [windowDimensions, setWindowDimensions] = useState({
+        width: null,
+        height: null,
+    })
 
     useEffect(() => {
+        // Set initial window dimensions once mounted. Cannot call in useState due to
+        // Gatsby SSR where window is not defined.
+        setWindowDimensions(getWindowDimensions())
+
         const handleResize = () => {
             setWindowDimensions(getWindowDimensions())
         }
