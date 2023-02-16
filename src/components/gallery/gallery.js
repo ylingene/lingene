@@ -150,7 +150,6 @@ const Gallery = ({ fluidImages }) => {
                 fluidImages.map(({ alt, image }, i) => (
                     <a
                         key={image.id}
-                        target="_blank"
                         rel="noreferrer"
                         {...getLightboxData(alt, image)}
                         style={{

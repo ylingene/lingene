@@ -8,7 +8,7 @@ const PHOTOSWIPE_OPTIONS = {
     showHideAnimationType: "fade",
     imageClickAction: "next",
     tapAction: "next",
-    showAnimationDuration: 400,
+    showAnimationDuration: 0,
     hideAnimationDuration: 200,
     paddingFn: (viewportSize, itemData, index) => {
         // Have top & bottom lightbox padding on smaller screens.
@@ -57,6 +57,11 @@ const initializeLightbox = () => {
         pswpModule: () => import("photoswipe"),
     })
 
+    /*
+    // commenting out since showAnimationDuration: 0, so no placeholder will be shown.
+    // there's a problem with stretching of placeholder and lightbox image when loading.
+    // issue: https://github.com/dimsemenov/PhotoSwipe/issues/1966
+
     // update msrc, the source of the thumbnail placeholder, when opening the lightbox
     lightbox.addFilter("domItemData", (itemData, element, linkEl) => {
         // Use the currently presented image url (srcset) for the thumbnail placeholder when
@@ -69,6 +74,7 @@ const initializeLightbox = () => {
         itemData.msrc = imageEl.currentSrc || backupSrc
         return itemData
     })
+    */
 
     // add custom attributes to pswp data
     lightbox.addFilter("itemData", (itemData, index) => {

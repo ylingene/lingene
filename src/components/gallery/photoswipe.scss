@@ -8,8 +8,14 @@
 * Overrides for Photoswipe styling
 **/
 
-div[class="pswp__bg"] {
-    background: $white;
+.pswp {
+    --pswp-placeholder-bg: white;  // override default black placeholder color
+
+    .pswp__bg { background: $white;}
+
+    .pswp__icn { fill: $black; }
+
+    .pswp__icn-shadow { display: none; }
 }
 
 .pswp__button--arrow .pswp__icn {
@@ -18,11 +24,5 @@ div[class="pswp__bg"] {
 }
 
 .pswp__img {
-    cursor: pointer !important;
-}
-
-.pswp {
-    --pswp-icon-color: $black;
-
-    .pswp__icn-shadow { display: none }
+    cursor: pointer !important;  // override zoom cursor
 }
