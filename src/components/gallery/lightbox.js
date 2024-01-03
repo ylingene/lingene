@@ -135,11 +135,18 @@ const initializeLightbox = () => {
         if (content.pictureElement && !content.pictureElement.parentNode) {
             e.preventDefault()
 
-            // when using compatible webp html, pswp often doesn't display image correctly due
-            // to the image width not being set. For these cases, use the sizes attribute that
-            // is the appropriately sized width to be displayed. See updateSrcsetSizes method:
-            // https://github.com/dimsemenov/PhotoSwipe/blob/beb4810b17e90b8b01a8331974b4c66169cd23a5/src/js/slide/content.js#L304-L310
-            // issue: https://github.com/dimsemenov/PhotoSwipe/issues/2005
+            /**
+             * when using compatible webp html, pswp often doesn't display image correctly due
+             * to the image width not being set. For these cases, use the sizes attribute that
+             * is the appropriately sized width to be displayed. See updateSrcsetSizes method:
+             * 
+             * https://github.com/dimsemenov/PhotoSwipe/blob/beb4810b17e90b8b01a8331974b4c66169cd23a5/src/js/slide/content.js#L304-L310
+             * issue: https://github.com/dimsemenov/PhotoSwipe/issues/2005
+             * 
+             * update 2024/01/02: a workaround "fix" was merged in but it introduces constant
+             * flickering of images even though they've been loaded
+             * PR: https://github.com/dimsemenov/PhotoSwipe/pull/2024
+             */
             if (!content.element.style.width) {
                 content.element.style.width = content.element.sizes
                 content.element.style.height = "auto"
@@ -148,6 +155,17 @@ const initializeLightbox = () => {
             content.slide.container.appendChild(content.pictureElement)
         }
     })
+
+    // for next/prev navigation with <picture>
+    // by default PhotoSwipe removes <img>,
+    // but we want to remove <picture>
+    lightbox.on('contentRemove', (e) => {
+        const { content } = e;
+        if (content.pictureElement && content.pictureElement.parentNode) {
+            e.preventDefault();
+            content.pictureElement.remove();
+        }
+    });
 
     // managing the lightbox
     lightbox.init()
