@@ -1,7 +1,4 @@
 module.exports = {
-    flags: {
-        THE_FLAG: false,
-    },
     siteMetadata: {
         title: `Lingene Yang`,
         author: {
