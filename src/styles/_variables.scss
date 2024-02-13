@@ -8,7 +8,7 @@ $screen-mobile-small: $mobile-small + 0px;
 $screen-desktop: $desktop + 0px;
 
 $space: 16px;
-$space-small: $space / 2;
+$space-small: calc($space / 2);
 $space-med: $space * 2;
 $space-large: $space * 2.5;
 $space-x-large: $space * 3;

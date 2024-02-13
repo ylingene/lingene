@@ -4,7 +4,7 @@ module.exports = {
         author: {
             name: `Lingene Yang`,
         },
-        description: `Portfolio website of Lingene Yang. Software engineer and artist based in San Francisco, CA.`,
+        description: `Portfolio website of Lingene Yang. Software engineer and artist.`,
         keywords: [`Lingene`],
         siteUrl: `https://www.lingeneyang.com`,
     },

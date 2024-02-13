@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "Lingene Yang",
   "dependencies": {
-    "@fontsource/inter": "^4.2.2",
-    "@fontsource/roboto": "^4.2.3",
-    "classnames": "^2.2.6",
+    "@fontsource/inter": "^5.0.16",
+    "@fontsource/roboto": "^5.0.8",
+    "classnames": "^2.5.1",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
@@ -23,16 +23,16 @@
     "gatsby-transformer-yaml": "^4.0.0",
     "justified-layout": "^4.0.0",
     "photoswipe": "^5.4.3",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.12",
-    "use-resize-observer": "^6.1.0-alpha.3"
+    "sass": "^1.70.0",
+    "use-resize-observer": "^9.1.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "prettier": "^2.2.1"
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5"
   },
   "license": "MIT",
   "main": "n/a",

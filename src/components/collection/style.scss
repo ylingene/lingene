@@ -26,7 +26,7 @@
 
     // inline-block has extra space below the element
     display: block !important; // override gatsby-image-wrapper-constrained inline-block
-    padding-top: 9 / 16 * 100%; // ~56.25%;
+    padding-top: calc(9 / 16 * 100%); // ~56.25%;
 }
 
 .heroWrapper {
