@@ -1,2 +1,0 @@
-(self.webpackChunklingene=self.webpackChunklingene||[]).push([[475],{6475:function(e,n,u){"use strict";function i(e,n,u){return n in e?Object.defineProperty(e,n,{value:u,enumerable:!0,configurable:!0,writable:!0}):e[n]=u,e}u.d(n,{Z:function(){return i}})}}]);
-//# sourceMappingURL=475-56caa1c688fe839f1640.js.map
