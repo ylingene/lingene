@@ -65,9 +65,9 @@ module.exports = {
                 useMozJpeg: false,
                 stripMetadata: false,
                 defaults: {
-                    formats: [`auto`, `webp`],
+                    formats: [`auto`, `webp`, `avif`],
                     placeholder: `none`,
-                    quality: 80,
+                    quality: 100,
                 },
             },
         },
