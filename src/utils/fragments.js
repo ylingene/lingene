@@ -5,8 +5,9 @@ import { graphql } from "gatsby"
  * most images.
  *
  * Recommend loading smaller image sizes to the browser because the constrained
- * Gatsby images will never span the full screen on sizes larger than mobile.
+ * Gatsby images will never span the full screen on larger screen sizes.
  *
+ * example:
  * (min-width: 400px) 50vw, 100vw -> if screen >= 400px image size is 50vw, else 100vw
  *
  * See
@@ -15,7 +16,7 @@ import { graphql } from "gatsby"
  */
 export const imageFragment = graphql`
     fragment ImageFragment on ImageSharp {
-        gatsbyImageData(sizes: "(min-width: 400px) 50vw, 100vw")
+        gatsbyImageData(sizes: "(min-width: 1250px) 60vw, 100vw")
     }
 `
 /**

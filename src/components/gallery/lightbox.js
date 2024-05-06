@@ -39,8 +39,8 @@ export const getLightboxData = (alt, image) => {
         "data-pswp-height": gatsbyImage.height,
         "data-pswp-width": gatsbyImage.width,
         "data-pswp-srcset": gatsbyImage.images.fallback.srcSet,
-        "data-pswp-avif-src": gatsbyImage.images.sources[0].srcSet,
-        "data-pswp-webp-src": gatsbyImage.images.sources[1].srcSet,
+        // "data-pswp-avif-src": gatsbyImage.images.sources[0].srcSet,
+        // "data-pswp-webp-src": gatsbyImage.images.sources[1].srcSet,
         "data-pswp-alt": alt,
     }
 }
@@ -79,8 +79,8 @@ const initializeLightbox = () => {
 
     // add custom attributes to pswp data
     lightbox.addFilter("itemData", (itemData, index) => {
-        itemData.webpSrc = itemData.element.dataset.pswpWebpSrc
-        itemData.avifSrc = itemData.element.dataset.pswpAvifSrc
+        // itemData.webpSrc = itemData.element.dataset.pswpWebpSrc
+        // itemData.avifSrc = itemData.element.dataset.pswpAvifSrc
         itemData.alt = itemData.element.dataset.pswpAlt
         return itemData
     })
@@ -95,13 +95,13 @@ const initializeLightbox = () => {
         // create most broadly compatible html for webp & avif images
         content.pictureElement = document.createElement("picture")
         
-        const sourceAvif = document.createElement("source")
-        sourceAvif.srcset = content.data.avifSrc
-        sourceAvif.type = "image/avif"
+        // const sourceAvif = document.createElement("source")
+        // sourceAvif.srcset = content.data.avifSrc
+        // sourceAvif.type = "image/avif"
 
-        const sourceWebp = document.createElement("source")
-        sourceWebp.srcset = content.data.webpSrc
-        sourceWebp.type = "image/webp"
+        // const sourceWebp = document.createElement("source")
+        // sourceWebp.srcset = content.data.webpSrc
+        // sourceWebp.type = "image/webp"
 
         content.element = document.createElement("img")
         content.element.src = content.data.src
@@ -109,8 +109,8 @@ const initializeLightbox = () => {
         content.element.setAttribute("alt", content.data.alt)
         content.element.className = "pswp__img"
 
-        content.pictureElement.appendChild(sourceAvif)
-        content.pictureElement.appendChild(sourceWebp)
+        // content.pictureElement.appendChild(sourceAvif)
+        // content.pictureElement.appendChild(sourceWebp)
         content.pictureElement.appendChild(content.element)
 
         // call this since it's skipped when not doing default behavior
