@@ -50,9 +50,8 @@ const AboutMe = () => (
         </header>
         <p>I'm an engineer and an artist.</p>
         <p>
-            I graduated with a B.S.E. in Computer Science and Engineering from
-            the University of Michigan in 2018, and I was recently a senior
-            software engineer at Affirm in San Francisco, CA.
+            I'm currently a senior software engineer at Patreon in San Francisco, CA and was previously at Affirm.
+            I graduated with a B.S.E. in Computer Science and Engineering from the University of Michigan in 2018.
         </p>
         <p>
             As an artist, I'm drawn to environments and nature. I capture them
