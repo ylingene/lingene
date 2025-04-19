@@ -20,7 +20,7 @@ const NotFoundPage = () => {
                 <div>
                     <div style={{ maxWidth: 800 }}>
                         <StaticImage
-                            src="../../content/images/photography/japan-2018/arashiyama.jpg"
+                            src="../../content/images/photography/japan-2018/japan-1-arashiyama.jpg"
                             alt="Arashiyama"
                         />
                     </div>

@@ -1,104 +1,114 @@
-- image: ../images/photography/japan-2018/arashiyama.jpg
+- image: ../images/photography/japan-2018/japan-1-arashiyama.jpg
   alt: Arashiyama
-- image: ../images/photography/japan-2018/daigoji.jpg
-  alt: Daigo-ji Temple
-- image: ../images/photography/japan-2018/tokyotrain.jpg
-  alt: train crossing
-- image: ../images/photography/japan-2018/japan-1.jpg
-  alt: train
 - image: ../images/photography/japan-2018/japan-2.jpg
-  alt: train
+  alt: Daigo-ji Temple
 - image: ../images/photography/japan-2018/japan-3.jpg
-  alt: Odaiba Rainbow Bridge
+  alt: train crossing
 - image: ../images/photography/japan-2018/japan-4.jpg
-  alt: Vending Machine
+  alt: train
 - image: ../images/photography/japan-2018/japan-5.jpg
-  alt: Aoyama Flower Market Tea House
+  alt: train
 - image: ../images/photography/japan-2018/japan-6.jpg
-  alt: restaurant
+  alt: Odaiba Rainbow Bridge
 - image: ../images/photography/japan-2018/japan-7.jpg
-  alt: Shinjuku Gyoen National Garden
+  alt: vending machine
 - image: ../images/photography/japan-2018/japan-8.jpg
-  alt: Tokyo
+  alt: Shinjuku Gyoen National Garden
 - image: ../images/photography/japan-2018/japan-9.jpg
-  alt: imperial palace
+  alt: restaurant
 - image: ../images/photography/japan-2018/japan-10.jpg
-  alt: Tokyo Tower
+  alt: Aoyama Flower Market Tea House
 - image: ../images/photography/japan-2018/japan-11.jpg
-  alt: Tokyo Tower
+  alt: Tokyo
 - image: ../images/photography/japan-2018/japan-12.jpg
-  alt: flowers in Yoyogi Park
-- image: ../images/photography/japan-2018/meguroriver.jpg
-  alt: Meguro River
+  alt: imperial palace
 - image: ../images/photography/japan-2018/japan-13.jpg
-  alt: Meguro River
+  alt: Tokyo Tower
 - image: ../images/photography/japan-2018/japan-14.jpg
-  alt: Meguro River
+  alt: Tokyo Tower
 - image: ../images/photography/japan-2018/japan-15.jpg
-  alt: Tokyo street
+  alt: Yoyogi Park
 - image: ../images/photography/japan-2018/japan-16.jpg
-  alt: Kyoto street
+  alt: Yoyogi Park
 - image: ../images/photography/japan-2018/japan-17.jpg
-  alt: temple
+  alt: Meguro River
 - image: ../images/photography/japan-2018/japan-18.jpg
-  alt: temple
+  alt: Meguro River
 - image: ../images/photography/japan-2018/japan-19.jpg
-  alt: bamboo
+  alt: street in Meguro
 - image: ../images/photography/japan-2018/japan-20.jpg
-  alt: willow tree
+  alt: street in Meguro
 - image: ../images/photography/japan-2018/japan-21.jpg
-  alt: train station
+  alt: alleyway in Kyoto
 - image: ../images/photography/japan-2018/japan-22.jpg
-  alt: train station
+  alt: temple
 - image: ../images/photography/japan-2018/japan-23.jpg
-  alt: Kibune
+  alt: temple
 - image: ../images/photography/japan-2018/japan-24.jpg
-  alt: Kifune shrine
+  alt: bamboo forest in Kyoto
 - image: ../images/photography/japan-2018/japan-25.jpg
-  alt: kawadoko dinner
-- image: ../images/photography/japan-2018/jpf2-1.jpg
-  alt: Kibune
+  alt: willow tree
 - image: ../images/photography/japan-2018/japan-26.jpg
-  alt: Kyoto street
+  alt: train station
 - image: ../images/photography/japan-2018/japan-27.jpg
-  alt: Kyoto street
+  alt: train station
 - image: ../images/photography/japan-2018/japan-28.jpg
-  alt: Kyoto street
+  alt: Kibune
 - image: ../images/photography/japan-2018/japan-29.jpg
-  alt: Kyoto street
+  alt: Kifune shrine
 - image: ../images/photography/japan-2018/japan-30.jpg
-  alt: Kyoto street
+  alt: kawadoko dinner
 - image: ../images/photography/japan-2018/japan-31.jpg
-  alt: Arashiyama
-- image: ../images/photography/japan-2018/jpf2-2.jpg
-  alt: Arashiyama
+  alt: Kibune
 - image: ../images/photography/japan-2018/japan-32.jpg
-  alt: Arashiyama
+  alt: Kyoto street
 - image: ../images/photography/japan-2018/japan-33.jpg
-  alt: Arashiyama train crossing
+  alt: Kyoto street
 - image: ../images/photography/japan-2018/japan-34.jpg
-  alt: Kyoto
-- image: ../images/photography/japan-2018/jpf2-3.jpg
-  alt: Philosopher's Path
-- image: ../images/photography/japan-2018/jpf2-5.jpg
-  alt: Philosopher's Path
-- image: ../images/photography/japan-2018/jpf2-4.jpg
-  alt: Philosopher's Path
-- image: ../images/photography/japan-2018/jpf2-6.jpg
-  alt: Ginkakuji
-- image: ../images/photography/japan-2018/jpf2-7.jpg
-  alt: Ginkakuji
-- image: ../images/photography/japan-2018/japan-38.jpg
-  alt: Daigo-ji
-- image: ../images/photography/japan-2018/japan-39.jpg
-  alt: Daigo-ji
+  alt: Kyoto street
 - image: ../images/photography/japan-2018/japan-35.jpg
-  alt: Kyoto
+  alt: Kyoto street
 - image: ../images/photography/japan-2018/japan-36.jpg
-  alt: Fushimi Inari Shrine
+  alt: Kyoto street
 - image: ../images/photography/japan-2018/japan-37.jpg
-  alt: Fushimi Inari Shrine
+  alt: Arashiyama
+- image: ../images/photography/japan-2018/japan-38.jpg
+  alt: Arashiyama river boat with tree
+- image: ../images/photography/japan-2018/japan-39.jpg
+  alt: Arashiyama
 - image: ../images/photography/japan-2018/japan-40.jpg
-  alt: Kyoto
+  alt: train crossing in Arashiyama
 - image: ../images/photography/japan-2018/japan-41.jpg
-  alt: Tokyo metro
+  alt: Kyoto garden 
+- image: ../images/photography/japan-2018/japan-42.jpg
+  alt: Kyoto garden
+- image: ../images/photography/japan-2018/japan-43.jpg
+  alt: backlit leaves
+- image: ../images/photography/japan-2018/japan-44.jpg
+  alt: Philosopher's Path
+- image: ../images/photography/japan-2018/japan-45.jpg
+  alt: Philosopher's Path
+- image: ../images/photography/japan-2018/japan-46.jpg
+  alt: Philosopher's Path
+- image: ../images/photography/japan-2018/japan-47.jpg
+  alt: Ginkakuji
+- image: ../images/photography/japan-2018/japan-48.jpg
+  alt: Ginkakuji
+- image: ../images/photography/japan-2018/japan-49.jpg
+  alt: Fushimi Inari Shrine
+- image: ../images/photography/japan-2018/japan-50.jpg
+  alt: Fushimi Inari Shrine
+- image: ../images/photography/japan-2018/japan-51.jpg
+  alt: temple garden
+- image: ../images/photography/japan-2018/japan-52.jpg
+  alt: Daigo-ji
+- image: ../images/photography/japan-2018/japan-53.jpg
+  alt: Daigo-ji
+- image: ../images/photography/japan-2018/japan-54.jpg
+  alt: Kyoto river
+- image: ../images/photography/japan-2018/japan-55.jpg
+  alt: family in kimono
+- image: ../images/photography/japan-2018/japan-56.jpg
+  alt: Kyoto street
+- image: ../images/photography/japan-2018/japan-57.jpg
+  alt: Tokyo train

@@ -4,7 +4,7 @@ location: Japan
 date: "2018-05-10"
 description: My first time visiting and photographing Japan during the spring/early summer season.
 backgroundColor: "#3D8741"
-hero: ../../images/photography/japan-2018/arashiyama.jpg
+hero: ../../images/photography/japan-2018/japan-1-arashiyama.jpg
 heroAlt: Arashiyama
 photos: ../../galleries/japan-2018.yaml
 ---
