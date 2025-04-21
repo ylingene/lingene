@@ -3,8 +3,8 @@ title: One Summer's Day
 location: Japan
 date: "2023-07-10"
 backgroundColor: "#166c9d"
-hero: ../../images/photography/japan-2023-2/japan-cover.jpg
-heroAlt: something
+hero: ../../images/photography/japan-2023-2/kanazawa-summer-clouds.jpg
+heroAlt: Summer clouds in Kanazawa, Japan
 photos: ../../galleries/japan-2023-2.yaml
 ---
 

@@ -3,7 +3,7 @@ title: A Distant Land
 location: France & Switzerland
 date: "2023-05-21"
 backgroundColor: "#7A93AC"
-hero: ../../images/photography/europe-2023/europe-46.jpg
+hero: ../../images/photography/europe-2023/europe-46-lauterbrunnen.jpg
 heroAlt: Lauterbrunnen Valley, Switzerland
 photos: ../../galleries/europe-2023.yaml
 ---
