@@ -3,7 +3,7 @@ title: Solace
 location: Japan
 date: "2019-04-08"
 backgroundColor: "#053854"
-hero: ../../images/photography/japan-2019/tokyotower.jpg
+hero: ../../images/photography/japan-2019/japan-4-tokyo-tower.jpg
 heroAlt: Tokyo Tower
 photos: ../../galleries/japan-2019.yaml
 ---
