@@ -64,10 +64,14 @@ module.exports = {
             options: {
                 useMozJpeg: false,
                 stripMetadata: false,
+                /**
+                 * 100 quality doubles the generated file size from the original. May need to export 
+                 * photos at different settings if gatsby compression causes artifacts and pixelation.
+                 */
                 defaults: {
                     formats: [`auto`],
                     placeholder: `none`,
-                    quality: 85,
+                    quality: 85, 
                 },
             },
         },
