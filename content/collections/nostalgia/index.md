@@ -1,16 +1,18 @@
 ---
 title: Nostalgia
 location: East Coast
-date: "2021-10-14"
-backgroundColor: "#438555"
-hero: ../../images/photography/east-coast-2021/ec-30.jpg
-heroAlt: prairie in Massachusetts
-photos: ../../galleries/east-coast-2021.yaml
+date: "2025-08-31"
+backgroundColor: "#911c20"
+hero: ../../images/photography/east-coast-2025/ec-76-camden-hills-state-park.jpg
+heroAlt: Sunset at Camden Hills State Park, Maine
+photos: ../../galleries/east-coast-2025.yaml
 ---
 
-Having grown up on the east coast, I often find myself longing for the warm summer evenings,
-crisp winter air, and distinct nature and foliage. I loved peering into my backyard with the
-dappled sunlight illuminating through tall maple trees on a summer afternoon.
+Home is surviving the stifling hot and humid summers and frigid winters. But it is also taking
+peaceful walks on a summer evening after the heat recedes and feeling alive, breathing
+in the crisp, dry air on a sunny winter day. It is walking through a sea of vibrant, blooming flowers in
+spring and warm, colorful leaves in autumn. Home is the charming seasonal life on the East Coast.
 
-This collection features scenes from New York City, Massachusetts, Maine, and New Hampshire during
-the summer and fall seasons.
+The memories of home span the past four years, from 2021 to 2025, but this collection will
+continue to evolve as I revisit home. They include scenes from Massachusetts, Washington D.C.,
+New York, Maine, New Hampshire, and Vermont.
