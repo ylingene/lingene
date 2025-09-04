@@ -3,7 +3,7 @@ title: Serenity
 location: Washington
 date: "2022-05-30"
 backgroundColor: "#203e59"
-hero: ../../images/photography/washington-2022/washington-9.jpg
+hero: ../../images/photography/washington-2022/washington-10.jpg
 heroAlt: Snow Lake, Washington
 photos: ../../galleries/washington-2022.yaml
 ---
