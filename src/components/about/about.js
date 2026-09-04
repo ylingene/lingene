@@ -50,7 +50,7 @@ const AboutMe = () => (
         </header>
         <p>I'm an engineer and an artist.</p>
         <p>
-            I'm currently a senior software engineer at Patreon in San Francisco, CA and was previously at Affirm.
+            I'm currently a staff software engineer at Patreon in San Francisco, CA and was previously at Affirm.
             I graduated with a B.S.E. in Computer Science and Engineering from the University of Michigan in 2018.
         </p>
         <p>
